@@ -1,0 +1,27 @@
+header {
+    height:30vh;
+    position: relative;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .heading {
+        color: white;
+        position: absolute;
+    }
+
+    .heading-1 {
+        font-size: 3.5vw;
+        font-weight: bold;
+        top: 30%;
+        left: 2%;
+    }
+
+    .heading-2 {
+        font-size: 2.5vw;
+        font-weight: bold;
+        top: 50%;
+        left: 2%;
+    }
+}
