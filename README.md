@@ -48,3 +48,27 @@ export default tseslint.config({
   },
 })
 ```
+## Creating the Docker image
+```
+sudo docker build . -t djescape-frontend:<version_number>
+```
+
+## Creating and running the Docker container
+```
+sudo docker run -d -p 3000:3000 djescape-frontend:<version_number>
+```
+
+## Running the container with Docker Compose
+```
+sudo docker compose up -d
+```
+
+## How to locally start the software
+### In Development mode
+```
+npm run dev
+```
+### In Production mode
+```
+serve -s dist
+```

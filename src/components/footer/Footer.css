@@ -1,4 +1,12 @@
 .footer {
     height:6vh;
-    background-color:aquamarine;
+}
+
+.footer a img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer a:not(:first-child) {
+    margin-left: 15px;
 }

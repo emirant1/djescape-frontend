@@ -12,4 +12,13 @@ div { width: 100%; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: fit-content;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.body p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
