@@ -1,12 +1,20 @@
-.footer {
-    height:6vh;
-}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-top: 10px;
 
-.footer a img {
-    width: 25px;
-    height: 25px;
-}
+    .footer {
+        height:3vh;
+    }
 
-.footer a:not(:first-child) {
-    margin-left: 15px;
+    .footer a img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .footer a:not(:first-child) {
+        margin-left: 15px;
+    }
 }

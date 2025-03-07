@@ -1,5 +1,5 @@
 header {
-    height:30vh;
+    height:37.5vh;
     position: relative;
     img {
         height: 100%;
@@ -12,16 +12,16 @@ header {
     }
 
     .heading-1 {
-        font-size: 3.5vw;
+        font-size: 7.2vw;
         font-weight: bold;
-        top: 30%;
-        left: 2%;
+        top: 22%;
+        left: 4%;
     }
 
     .heading-2 {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
         font-weight: bold;
-        top: 50%;
-        left: 2%;
+        top: 54%;
+        left: 4%;
     }
 }

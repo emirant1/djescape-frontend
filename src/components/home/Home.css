@@ -1,0 +1,19 @@
+.body {
+    height:47vh;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5em auto;
+    max-width: 900px;
+    color: #92908a;
+}
+
+.body p {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.body p.about {
+    font-weight: bold;
+    font-size: 1.3rem;
+}

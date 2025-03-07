@@ -1,14 +1,19 @@
 import './Nav.css';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
         <nav>
             <span>NO ESCAPIN' THIS</span>
             <ul>
-                <li>Home</li>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
                 <li>Pictures</li>
                 <li>References</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
             </ul>
         </nav>
     );
