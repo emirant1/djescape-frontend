@@ -3,6 +3,7 @@ footer {
     bottom: 0;
     background-color: #f3f3f3;
     width: 100%;
+    max-width: 1280px;
     padding-top: 10px;
 
     .footer {

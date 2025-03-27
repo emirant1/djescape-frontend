@@ -1,9 +1,8 @@
 .body {
-    height:47vh;
+    height:40vh;
     display: flex;
     flex-direction: column;
-    margin: 3.5em auto;
-    max-width: 900px;
+    padding: 2em var(--padding-lr-desktop) 3.5em var(--padding-lr-desktop);
     color: #92908a;
 }
 
@@ -16,4 +15,28 @@
 .body p.about {
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        padding-left: var(--padding-lr-tablet);
+        padding-right: var(--padding-lr-tablet);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        padding-top: 20px;
+        padding-left: var(--padding-lr-smartphone);
+        padding-right: var(--padding-lr-smartphone);
+
+        p {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        p.about {
+            font-size: 1.1rem;
+        }
+    }
 }

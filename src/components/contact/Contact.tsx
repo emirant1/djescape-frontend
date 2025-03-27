@@ -12,16 +12,11 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-container">
+        <div className="body">
             <form onSubmit={ handleSubmit }>
                 <div className="form-group">
-                    <label htmlFor="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required />
-                </div>
-
-                <div className="form-group">
-                    <label htmlFor="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required />
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" name="name" required />
                 </div>
 
                 <div className="form-group">
