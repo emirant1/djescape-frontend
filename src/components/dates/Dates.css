@@ -1,0 +1,14 @@
+.dates-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.date {
+    display: flex;
+    width: 300px;
+    .column {
+        flex: 1;
+        text-align: left;
+        padding: 4px;
+    }
+}

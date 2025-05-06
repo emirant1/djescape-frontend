@@ -62,6 +62,15 @@ sudo docker run -d -p 3000:3000 djescape-frontend:<version_number>
 ```
 sudo docker compose up -d
 ```
+## Tag the created image
+```
+sudo docker tag djescape-frontend:<tag_version> emirant1/djescape-frontend:<tag_version>
+```
+
+## Push the image to DockerHub
+```
+sudo docker push emirant1/djescape-frontend:tag_version
+```
 
 ## How to locally start the software
 ### In Development mode
