@@ -39,3 +39,12 @@ export enum OPERATION_STATUS {
     SUCCESS,
     FAILURE
 }
+
+/**
+ * This interface serves the purpose of representing the references that will be displayed on the page.
+ */
+export interface Reference {
+    id: string,
+    title: string,
+    items: BasicItem[]
+}
