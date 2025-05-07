@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 /* Constants */
-const API_URL: string = 'http://localhost:8081';
+const API_URL: string = import.meta.env.VITE_API_URL?? 'http://localhost:8081';
 const CONTACT_RESOURCE: string = '/api/v1/contact';
 
 const Contact = () => {
