@@ -23,15 +23,40 @@
     "sent": "Your message has been sent!",
     "reply": "We will gladly read it an answer it as soon as we can."
   },
+  "password": "Password",
+  "login": "Login",
+  "logout": "Logout",
+  "edit": "Edit",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "loading": "Loading...",
   "errors": {
     "unknown": "An unknown error occurred",
     "required": {
       "name": "The name is required",
       "email": "The email is required",
-      "comments": "The comments cannot be empty"
+      "password": "The password is required",
+      "comments": "The comments cannot be empty",
+      "text": "The text is required"
     },
     "invalid": {
       "email": "The email is not valid"
+    },
+    "maxLength": {
+      "text": "The text cannot exceed 3000 characters"
+    }
+  },
+  "cockpit": {
+    "about": {
+      "title": "About Management",
+      "text": "Text",
+      "create": "Create",
+      "update": "Update",
+      "list": "About Records",
+      "active": "Active",
+      "deleted": "Deleted",
+      "saved": "Saved successfully.",
+      "confirmDelete": "Are you sure you want to delete this about?"
     }
   }
 }

@@ -9,6 +9,9 @@ import Home from "./components/home/Home.tsx";
 import Dates from "./components/dates/Dates.tsx";
 import Contact from "./components/contact/Contact.tsx";
 import References from "./components/references/References.tsx";
+import Login from "./components/login/Login.tsx";
+import CockpitAbout from "./components/cockpit/about/CockpitAbout.tsx";
+import ProtectedRoute from "./components/auth/ProtectedRoute.tsx";
 
 function App() {
     return (
@@ -20,6 +23,12 @@ function App() {
                 <Route path="/dates" element={ <Dates /> } />
                 <Route path="/references" element={ <References /> } />
                 <Route path="/contact" element={ <Contact /> } />
+                <Route path="/login" element={ <Login /> } />
+                <Route path="/cockpit/about" element={
+                    <ProtectedRoute>
+                        <CockpitAbout />
+                    </ProtectedRoute>
+                } />
             </Routes>
             <Footer />
         </main>

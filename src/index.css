@@ -10,6 +10,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* This snippet hides the scrollbar */
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 a {

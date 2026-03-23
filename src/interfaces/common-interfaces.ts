@@ -48,3 +48,26 @@ export interface Reference {
     title: string,
     items: BasicItem[]
 }
+
+export interface LoginRequest {
+    email: string,
+    password: string
+}
+
+export interface LoginResponse {
+    user: string,
+    tokens: {
+        accessToken: string,
+        refreshToken: string
+    }
+}
+
+export interface AboutResponse {
+    id: number,
+    text: string,
+    deletedAt?: string | null
+}
+
+export interface AboutRequest {
+    text: string
+}

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 /* Constants */
-const API_URL: string = import.meta.env.VITE_API_URL?? 'http://djescape-backend:8081';
 const CONTACT_RESOURCE: string = '/api/v1/contact';
 
 const Contact = () => {
@@ -25,7 +24,7 @@ const Contact = () => {
         setSubmissionStatus(OPERATION_STATUS.INITIALIZED);
 
         try {
-            const response = await fetch(`${API_URL}${CONTACT_RESOURCE}`, {
+            const response = await fetch(`${CONTACT_RESOURCE}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,0 +1,124 @@
+.cockpit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #92908a;
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #92908a;
+    color: var(--font-color-default);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: #6c6c6c;
+}
+
+.btn-danger {
+    background-color: #922b21;
+}
+
+.about-form {
+    margin-bottom: 30px;
+}
+
+.about-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+}
+
+.about-item.deleted {
+    opacity: 0.5;
+    border-style: dashed;
+}
+
+.about-text {
+    margin: 0 0 8px 0;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.about-meta {
+    font-size: 12px;
+    color: #92908a;
+    margin: 0 0 8px 0;
+}
+
+.about-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.error {
+    color: #922b21;
+}
+
+.success {
+    color: #1e8449;
+}
