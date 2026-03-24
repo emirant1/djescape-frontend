@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const COCKPIT_API_URL: string = import.meta.env.VITE_COCKPIT_API_URL ?? '';
-const ABOUT_RESOURCE: string = `${COCKPIT_API_URL}/cockpit/about`;
+const ABOUT_RESOURCE: string = `${COCKPIT_API_URL}/api/cockpit/about`;
 
 const useAbout = () => {
     const [paragraphs, setParagraphs] = useState<string[]>([]);

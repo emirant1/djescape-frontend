@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { LoginRequest, LoginResponse } from '../../interfaces/common-interfaces';
 
 const COCKPIT_API_URL: string = import.meta.env.VITE_COCKPIT_API_URL ?? '';
-const AUTH_RESOURCE: string = `${COCKPIT_API_URL}/auth/login`;
+const AUTH_RESOURCE: string = `${COCKPIT_API_URL}/api/auth/login`;
 const TOKEN_KEY = 'djescape_access_token';
 
 interface AuthContextType {

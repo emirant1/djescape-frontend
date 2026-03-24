@@ -20,7 +20,7 @@ const Login = () => {
         setIsSubmitting(true);
         try {
             await login(data);
-            navigate(state?.from ?? '/cockpit/about');
+            navigate(state?.from ?? '/api/cockpit/about');
         } catch (e: unknown) {
             setErrorMessage(e instanceof Error ? e.message : t('errors.unknown'));
         } finally {
