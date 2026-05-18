@@ -11,6 +11,7 @@ import Contact from "./components/contact/Contact.tsx";
 import References from "./components/references/References.tsx";
 import Login from "./components/login/Login.tsx";
 import CockpitAbout from "./components/cockpit/about/CockpitAbout.tsx";
+import CockpitEvent from "./components/cockpit/event/CockpitEvent.tsx";
 import ProtectedRoute from "./components/auth/ProtectedRoute.tsx";
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
                 <Route path="/cockpit/about" element={
                     <ProtectedRoute>
                         <CockpitAbout />
+                    </ProtectedRoute>
+                } />
+                <Route path="/cockpit/event" element={
+                    <ProtectedRoute>
+                        <CockpitEvent />
                     </ProtectedRoute>
                 } />
             </Routes>

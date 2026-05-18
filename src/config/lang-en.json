@@ -57,6 +57,17 @@
       "deleted": "Deleted",
       "saved": "Saved successfully.",
       "confirmDelete": "Are you sure you want to delete this about?"
+    },
+    "event": {
+      "title": "Events Management",
+      "date": "Date",
+      "eventTitle": "Title",
+      "create": "Create",
+      "update": "Update",
+      "saved": "Events saved successfully.",
+      "noEvents": "No events found.",
+      "addRow": "Add Event",
+      "confirmDelete": "Are you sure you want to delete this event?"
     }
   }
 }

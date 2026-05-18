@@ -1,33 +1,42 @@
 import './Dates.css'
-import { BasicItem } from "../../interfaces/common-interfaces.ts";
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { EventResponse } from '../../interfaces/common-interfaces.ts';
+
+const COCKPIT_API_URL: string = import.meta.env.VITE_COCKPIT_API_URL ?? '';
+const EVENT_RESOURCE: string = `${COCKPIT_API_URL}/api/cockpit/event`;
+
+const formatEventDate = (eventDate: string): string => {
+    const [day, month, year] = eventDate.split('.');
+    const date = new Date(Number(year), Number(month) - 1, Number(day));
+    const weekday = date.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+    return `${weekday} ${eventDate}`;
+};
 
 const Dates = () => {
+    const { t } = useTranslation();
+    const [events, setEvents] = useState<EventResponse[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const dates: BasicItem[] = [
-        { id:"1", key: "FRI 09.05.2025", value: "Opening Tankbar" },
-        { id:"2", key: "SAT 10.05.2025", value: "P9 Biberist" },
-        { id:"3", key: "FRI 16.05.2025", value: "Druckerei" },
-        { id:"4", key: "SAT 24.05.2025", value: "Zrce Beach CRO" },
-        { id:"5", key: "THU 19.06.2025", value: "Corporate Event" },
-        { id:"6", key: "FRI 20.06.2025", value: "Lyssbachmärit" },
-        { id:"7", key: "SAT 21.06.2025", value: "Lyssbachmärit" },
-        { id:"8", key: "FRI 27.06.2025", value: "Braderie Biel" },
-        { id:"9", key: "SAT 28.06.2025", value: "Braderie Biel" },
-        { id:"10", key: "SAT 05.07.2025", value: "Beachtown Biel" }
-    ];
+    useEffect(() => {
+        setIsLoading(true);
+        fetch(EVENT_RESOURCE)
+            .then(res => res.json())
+            .then(data => setEvents(data))
+            .finally(() => setIsLoading(false));
+    }, []);
 
     return (
         <div className="body">
             <div className="dates-wrapper">
+                { isLoading && <p>{ t('loading') }</p> }
                 {
-                    dates.map(basicItem => {
-                        return (
-                            <div className="date" key={ basicItem.id }>
-                                <div className="column">{ basicItem.key }</div>
-                                <div className="column text-align-left">{ basicItem.value }</div>
-                            </div>
-                        );
-                    })
+                    events.map(event => (
+                        <div className="date" key={ event.id }>
+                            <div className="column">{ formatEventDate(event.eventDate) }</div>
+                            <div className="column text-align-left">{ event.title }</div>
+                        </div>
+                    ))
                 }
             </div>
         </div>

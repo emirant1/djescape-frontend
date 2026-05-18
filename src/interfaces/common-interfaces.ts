@@ -71,3 +71,14 @@ export interface AboutResponse {
 export interface AboutRequest {
     text: string
 }
+
+export interface EventResponse {
+    id: number,
+    title: string,
+    eventDate: string
+}
+
+export interface EventRequest {
+    title: string,
+    eventDate: string
+}
