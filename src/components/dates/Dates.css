@@ -5,7 +5,7 @@
 
 .date {
     display: flex;
-    width: 300px;
+    width: 350px;
     .column {
         flex: 1;
         text-align: left;
