@@ -10,8 +10,7 @@ const Footer = () => {
 
     const socialMediaElements: SocialMedia[] = [
         { name: 'Facebook', url: "https://facebook.com/escape_usd", imagePath: "/images/socialmedia/facebook-icon.svg" },
-        { name: 'Instagram', url: "https://instagram.com/escape_usd", imagePath: "/images/socialmedia/instagram-icon.svg" },
-        { name: 'Email', url: "mailto:Boris.Stjepanovic@rado.com", imagePath: "/images/socialmedia/email-icon.svg" }
+        { name: 'Instagram', url: "https://instagram.com/escape_usd", imagePath: "/images/socialmedia/instagram-icon.svg" }
     ];
 
     return (
