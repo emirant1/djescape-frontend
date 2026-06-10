@@ -1,0 +1,44 @@
+.reference-create-section {
+    margin-bottom: 30px;
+}
+
+.reference-list-section {
+    overflow-x: auto;
+}
+
+.reference-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 15px auto;
+    border-collapse: collapse;
+}
+
+.reference-table th,
+.reference-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reference-table th {
+    font-weight: 600;
+    border-bottom: 2px solid #92908a;
+}
+
+.reference-actions {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.reference-table input[type="text"],
+.reference-table input[type="url"] {
+    width: 100%;
+    min-width: 100px;
+}
+
+.reference-table textarea {
+    width: 100%;
+    min-width: 150px;
+    resize: vertical;
+}

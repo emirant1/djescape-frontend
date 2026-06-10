@@ -82,3 +82,18 @@ export interface EventRequest {
     title: string,
     eventDate: string
 }
+
+export interface ReferenceResponse {
+    id: number,
+    category: string,
+    title: string,
+    description: string,
+    url: string
+}
+
+export interface ReferenceRequest {
+    category: string,
+    title: string,
+    description: string,
+    url: string
+}
